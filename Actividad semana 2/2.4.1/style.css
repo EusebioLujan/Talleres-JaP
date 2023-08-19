@@ -1,0 +1,32 @@
+body{
+    height: 500px;
+    width: fit-content;
+    padding: 1%;
+}
+
+input{
+    width: max-content;
+    padding: 1%;
+}
+button{
+    display: flex;
+    width: fit-content;
+    padding: 1%;
+    border-radius: 8px;
+    font-weight: bold;
+}
+button:hover{
+    background-color: cadetblue;
+    color:white;
+
+}
+span{
+    padding: 1%;
+    width: fit-content;
+}
+.styleLabel{
+    font-weight: bold;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+

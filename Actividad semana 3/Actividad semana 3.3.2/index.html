@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Portafolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              nav: '#015560',
+            }
+          }
+        }
+      }
+    </script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="./utils.js" type="text/javascript"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- Debes crear todo el código CSS en una hoja de estilos externa
+El código CSS debe contener al menos 3 selectores que hagan referencia a clases
+El código CSS debe contener al menos 2 selectores que hagan referencia a elementos de la página a través de su id
+La página debe contener al menos una imagen -->
+  <body id="Landing">
+    <!-- Inicio del navbar -->
+    <div class="text-1xl flex h-20 shadow-md bg-nav text-white flex justify-around">
+      <a href="#Landing" class="nav-item" onclick="setActive(this)">Inicio</a>
+      <a href="#Sobremi" class="nav-item" onclick="setActive(this)">Sobre Mi</a>
+      <a href="#Skills" class="nav-item" onclick="setActive(this)">Skills</a>
+      <a href="#Proyects" class="nav-item" onclick="setActive(this)"
+        >Proyectos</a
+      >
+      <a href="#Contacto" class="nav-item" onclick="setActive(this)"
+        >Contacto</a
+      >
+    </div>
+    <!-- Inicio del Landing -->
+    <div class="bglanding">
+      <div class="my-16 flex w-full items-center">
+        <div class="flex flex-col w-8/12 font-bold text-md">
+          <h1 style="color: #015560" class="stylehs">
+            Hola, soy <span class="styleh">Marcelo Lujan</span>
+          </h1>
+          <h2 style="color: #015560" class="stylehs">
+            <span class="styleh">y soy</span> Front-End
+          </h2>
+        </div>
+        <lottie-player
+          src="https://assets6.lottiefiles.com/packages/lf20_kyu7xb1v.json"
+          background="transparent"
+          speed="1"
+          style="width: 500px; height: 500px"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+    </div>
+    <!-- Sector Sobre mi -->
+    <div id="Sobremi" class="bg2">
+      <div class="stylegeneralsobremi">
+        <h1 style="color: aliceblue" class="stylehs">Sobre mí</h1>
+        <div class="divimgtext">
+          <div class="divimg">
+            <lottie-player
+              src="https://assets5.lottiefiles.com/private_files/lf30_wqypnpu5.json"
+              background="transparent"
+              speed="1"
+              style="width: 600px; height: 600px"
+              loop
+              autoplay
+            ></lottie-player>
+          </div>
+          <h1 class="styleh1">
+            Soy
+            <span class="stylehs2"
+              >Marcelo Lujan y soy desarrollador Front-End
+            </span>
+            . Tengo experiencia en <em>HTML</em>,<em>CSS</em> , lenguajes como
+            <em>JS</em> y <em>TS</em>, frameworks como
+            <em>Next.js y Vue.js</em>, y librerías como
+            <em>Tailwind CSS y Redux</em>, entre otros. Me apasiona ver cómo,
+            con un par de cambios en el código, puedes ver los resultados en
+            tiempo real y cómo evoluciona todo. Comencé en el Front-End gracias
+            a mi pareja, quien me ha ayudado a seguir adelante en esto. Me
+            encanta el Front-End y, gracias a mi perspectiva detallista, puedo
+            encontrar las diferencias en cualquier cosa.
+          </h1>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br />
+    <!-- Sector Skills -->
+    <div id="Skills" class="bg2" style="margin-bottom: -5%">
+      <br /><br />
+      <h1 class="stylehs">Skills</h1>
+      <article id="article">
+        <section style="margin-bottom: 5%">
+          <img src="./public/css.png" alt="CSS" />
+          <img src="./public/html-5.png" alt="HTML" />
+          <img src="./public/javascript.png" alt="JS" />
+          <img src="./public/Redux.png" alt="Redux" />
+          <img src="./public/typescript.png" alt="TS" />
+        </section>
+        <h1 class="styleh1">
+          Mis fortalezas radican en que me concentro en encontrar incluso los
+          errores más pequeños y no descanso hasta solucionarlos. Me gusta
+          entregar los proyectos en tiempo y forma para cumplir siempre con mi
+          rol. He participado en proyectos muy grandes que han forjado mi
+          autonomía y habilidades de desarrollo. Además, tengo conocimientos en
+          UX/UI y utilizo herramientas como Figma para diseñar páginas web con
+          una visión orientada al usuario.
+        </h1>
+      </article>
+    </div>
+    <br /><br /><br />
+    <!-- Sector Proyectos -->
+    <div id="Proyects" style="height: 180px"></div>
+    <div class="bg2">
+      <h1 class="stylehs">Proyectos</h1>
+      <h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error optio
+        veritatis tempora, iste saepe ex vero rerum similique tempore architecto
+        impedit recusandae nobis tenetur sed nostrum incidunt, totam, doloribus
+        ratione? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+        eligendi, numquam iure in, delectus dolores laborum quisquam magnam
+        voluptas consequatur aut. Ex ducimus quia ullam, velit ad deserunt iure
+        hic. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+        modi deleniti, soluta libero aliquid accusamus aperiam optio ad natus,
+        doloribus suscipit, reiciendis assumenda! Dolorum, illo dolores! Labore
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam enim
+        molestias, numquam inventore eveniet minima ad modi explicabo expedita
+        repudiandae. Nam facere quia odit tempora, tempore itaque perspiciatis
+        distinctio eum? inventore earum dicta?Lorem ipsum, dolor sit amet
+        consectetur adipisicing elit. Aliquid libero quas doloremque quaerat
+        illum, sit autem facere, error odio incidunt, aliquam accusantium? Ipsam
+        qui reiciendis ut non molestiae, soluta at!
+      </h1>
+    </div>
+    <!-- Sector Contacto -->
+    <div id="Contacto" style="height: 50px"></div>
+    <div id="bgform">
+      <h1 class="stylehs">Contacto</h1>
+      <div class="styleformgeneral">
+        <form>
+          <label>Nombre Completo:</label>
+          <input type="text" />
+          <label>Correo:</label>
+          <input type="email" />
+          <label>Asunto:</label>
+          <input type="text" />
+          <label>Comentario:</label>
+          <textarea></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+    <p style="margin: auto">Creado por Marcelo Lujan</p>
+  </body>
+</html>

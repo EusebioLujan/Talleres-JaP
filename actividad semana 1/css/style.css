@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+  }
+  
+  div {
+    background-color: #0F212E;
+    color: white;
+    padding: 20px;
+    width: 600px;;
+  }
+  
+  h1, p {
+    font-weight: bold;
+  }
+  
+  .Titleh1{
+background-color: red;
+  }
+  .StyleP{
+    background-color:blue;
+  }
+ 

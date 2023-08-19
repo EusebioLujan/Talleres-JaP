@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>¡Mi Primer Formulario!</title>
+    <!-- me traigo el codigo de validation con el script -->
+    <script src="FormValidation.js"></script>
+    <!-- hago un script para el handle submit utilizo una validacion para ver si la funcion esta operativa y si es asi se haga el submit -->
+    <script>
+      function handleFormSubmit(event) {
+        event.preventDefault();
+        if (FormValidation()) {
+          event.target.submit();
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <h1>Formulario de registro</h1>
+      <form
+        style="display: flex; flex-direction: column"
+        onsubmit="handleFormSubmit(event)"
+      >
+        <label class="styleLabel">Nombre:</label>
+        <input type="text" id="nombre" required />
+        <label class="styleLabel">Apellido:</label>
+        <input type="text" id="apellido" required />
+        <!-- aca empieza el sector de elejir el sexo -->
+        <div style="padding-top: 5px; padding-bottom: 5px">
+          <label class="styleLabel">Sexo:</label>
+          <input type="radio" name="sexo" value="hombre" required />
+          <label>hombre</label>
+          <input type="radio" name="sexo" value="mujer" required />
+          <label>mujer</label>
+        </div>
+        <!-- saliendo del sector y entrando en el sector de correo y pw -->
+        <label class="styleLabel">Correo:</label>
+        <input type="email" id="correo" required />
+        <label class="styleLabel">Contraseña:</label>
+        <input type="password" id="contraseña" required />
+        <!-- saliendo del sector y entrando a los checkbox y radiosbutton -->
+        <div style="padding: 1%">
+          <input type="checkbox" id="información" />
+          <span>Deseo recibir información sobre novedades y ofertas</span>
+        </div>
+        <div style="padding: 1%">
+          <input type="checkbox" id="condiciones" required />
+          <span
+            >Declaro haber leído y aceptar las condiciones generales del
+            programa y la normativa sobre protección de datos</span
+          >
+        </div>
+        <!-- saliendo del sector y por ultimo el button de submit -->
+        <div>
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
