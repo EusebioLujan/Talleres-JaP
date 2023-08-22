@@ -1,6 +1,6 @@
 // Array extraño
 const strangeArray = [
-  "Zero",
+  
   function () {
     alert("Hola soy una función en un array");
   },
@@ -9,6 +9,7 @@ const strangeArray = [
   "Go lang",
   undefined,
   "Cobol",
+  "Zero",
   "I'm programmer",
   -2000,
   "Hello world",
@@ -38,7 +39,12 @@ function showList(array) {
 
 document.addEventListener("DOMContentLoaded", (e) => {
   // Escribe tu solución aquí
-  const result = strangeArray.filter((e)=> typeof e ==="string").sort((a,b)=>a.toLowerCase().localeCompare(b.toLowerCase()))
-  showList(result)
+  const result = strangeArray
+    .filter((e) => typeof e === "string")
+    .sort((a, b) => {
+     return a.toLowerCase().localeCompare(b.toLowerCase());
+    });
+
+  showList(result);
   // Sugerencia de cómo mostrar el array => showList(strangeArray);
 });
